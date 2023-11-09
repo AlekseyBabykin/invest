@@ -7,7 +7,7 @@ import { observer } from "mobx-react-lite";
 import NavBar from "./components/NavBar";
 import { useContext, useState } from "react";
 import { Context } from ".";
-import Rocket from "./components/Rocket";
+
 import Footer from "./components/Footer";
 
 // import { check } from "./http/userAPI";

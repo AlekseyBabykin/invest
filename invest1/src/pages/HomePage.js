@@ -1,10 +1,13 @@
 import React from "react";
-import Rocket from "../components/Rocket";
+
 import { Container, Image, Row, Col } from "react-bootstrap";
 import logo from "../photo/logo.jpg";
 import "../styles/HomePage.css";
+import { useParams } from "react-router-dom";
 
 const HomePage = () => {
+  const { name } = useParams();
+  console.log(name);
   return (
     <Container className="mt-2">
       <Row>
@@ -12,7 +15,7 @@ const HomePage = () => {
           <Image height={300} width={300} src={logo} />
         </Col>
         <Col xs={8}>
-          <div class="wrapper">
+          <div className="wrapper">
             <h2
               style={{
                 fontFamily: "Oswald, sans-serif",
@@ -22,7 +25,7 @@ const HomePage = () => {
             >
               Mission Statement
             </h2>
-            <div class="typing-demo">
+            <div className="typing-demo">
               <p>“Making the world of Entrepreneurship accessible</p>
               <p>to people with big ideas without Background”</p>
             </div>

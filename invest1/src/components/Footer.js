@@ -1,4 +1,5 @@
 import React from "react";
+import { BsLinkedin, BsFacebook, BsTwitter, BsInstagram } from "react-icons/bs";
 import {
   MDBFooter,
   MDBContainer,
@@ -56,25 +57,25 @@ export default function Footer() {
               </MDBCol>
 
               <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-                <h6 className="text-uppercase fw-bold mb-4">Products</h6>
+                <h6 className="text-uppercase fw-bold mb-4">social network</h6>
                 <p>
                   <a href="#!" className="text-reset">
-                    Angular
+                    <BsLinkedin /> Linkedin
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    React
+                    <BsFacebook /> Facebook
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Vue
+                    <BsTwitter /> Twitter
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Laravel
+                    <BsInstagram /> Instagram
                   </a>
                 </p>
               </MDBCol>
@@ -83,17 +84,17 @@ export default function Footer() {
                 <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
                 <p>
                   <a href="#!" className="text-reset">
-                    Pricing
+                    Privacy policy
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Settings
+                    Networking
                   </a>
                 </p>
                 <p>
                   <a href="#!" className="text-reset">
-                    Orders
+                    About us
                   </a>
                 </p>
                 <p>

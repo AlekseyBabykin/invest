@@ -38,7 +38,7 @@ export const authRoutes = [
 
 export const pablicRoutes = [
   {
-    path: FINANCE_ROUTE,
+    path: FINANCE_ROUTE + "/:name",
     Component: Finance,
   },
   {
@@ -49,32 +49,32 @@ export const pablicRoutes = [
     path: REGISTRATION_ROUTE,
     Component: Auth,
   },
+  // {
+  //   path: MARKETING_ROUTE + "/:name",
+  //   Component: Marketing,
+  // },
   {
-    path: MARKETING_ROUTE,
-    Component: Marketing,
-  },
-  {
-    path: MANAGEMENT_ROUTE,
+    path: MANAGEMENT_ROUTE + "/:name",
     Component: Management,
   },
   {
-    path: TECHNOLOGY_ROUTE,
+    path: TECHNOLOGY_ROUTE + "/:name",
     Component: Technology,
   },
   {
-    path: PRODUCT_ROUTE,
+    path: PRODUCT_ROUTE + "/:name",
     Component: Product,
   },
   {
-    path: HUMAN_RESOURCES_ROUTE,
+    path: HUMAN_RESOURCES_ROUTE + "/:name",
     Component: HumanResources,
   },
   {
-    path: ENTERPRENEURSHIP_ROUTE,
+    path: ENTERPRENEURSHIP_ROUTE + "/:name",
     Component: Enterpreneurship,
   },
   {
-    path: LEGAL_AND_LAW_ROUTE,
+    path: LEGAL_AND_LAW_ROUTE + "/:name",
     Component: LegaAndLaw,
   },
   {

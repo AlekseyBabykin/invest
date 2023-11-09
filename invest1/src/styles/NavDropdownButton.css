@@ -1,3 +1,11 @@
+#custom-hover:hover {
+  background-color: rgb(
+    42,
+    45,
+    56
+  ); /* Change the background color when hovered */
+  color: #000; /* Change the text color when hovered */
+}
 #navbarScrollingDropdown {
   padding: 2px 2px 2px 2px;
 
