@@ -1,7 +1,6 @@
 import React from "react";
 import { NavDropdown } from "react-bootstrap";
 import "../styles/NavDropdownButton.css";
-import { MANAGEMENT_ROUTE } from "../utils/consts";
 
 const NavDropdownButton = (props) => {
   return (
@@ -9,7 +8,7 @@ const NavDropdownButton = (props) => {
       {props.allTopiks.map((el, index) => (
         <NavDropdown.Item
           key={index}
-          href={MANAGEMENT_ROUTE + "/" + el}
+          href={props.link + "/" + el}
           id="custom-hover"
         >
           {el}

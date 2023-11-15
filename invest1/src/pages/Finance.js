@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Finance = () => {
-  return <div>Finance</div>;
+  return (
+    <Container>
+      <div>Finance</div>
+    </Container>
+  );
 };
 
 export default Finance;

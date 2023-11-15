@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const LegaAndLaw = () => {
-  return <div>LegaAndLaw</div>;
+  return (
+    <Container>
+      <div>LegaAndLaw</div>
+    </Container>
+  );
 };
 
 export default LegaAndLaw;

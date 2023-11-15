@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Product = () => {
-  return <div>Product</div>;
+  return (
+    <Container>
+      <div>Product</div>
+    </Container>
+  );
 };
 
 export default Product;

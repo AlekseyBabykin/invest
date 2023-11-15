@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const HumanResources = () => {
-  return <div>HumanResources</div>;
+  return (
+    <Container>
+      <div>HumanResources</div>
+    </Container>
+  );
 };
 
 export default HumanResources;

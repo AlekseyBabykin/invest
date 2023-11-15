@@ -10,8 +10,12 @@ import NavDropdownButton from "./NavDropdownButton";
 import {
   FINANCE_ROUTE,
   HOME_PAGE,
+  HUMAN_RESOURCES_ROUTE,
+  LEGAL_AND_LAW_ROUTE,
   MANAGEMENT_ROUTE,
   MARKETING_ROUTE,
+  PRODUCT_ROUTE,
+  TECHNOLOGY_ROUTE,
 } from "../utils/consts";
 
 const NavBar = () => {
@@ -47,6 +51,7 @@ const NavBar = () => {
         "Business Automatoins",
         "Blockchan",
       ],
+      link: TECHNOLOGY_ROUTE,
     },
     {
       Product: [
@@ -54,6 +59,7 @@ const NavBar = () => {
         "Product Roadmaps",
         "Product A/B Testing",
       ],
+      link: PRODUCT_ROUTE,
     },
     {
       HumanResourse: [
@@ -61,6 +67,7 @@ const NavBar = () => {
         "Recruitment Process",
         "Onboarding",
       ],
+      link: HUMAN_RESOURCES_ROUTE,
     },
     { Entrepreneurship: [" "] },
     {
@@ -69,6 +76,7 @@ const NavBar = () => {
         "Patent Registration in Israel",
         "Patent Registtion in USA",
       ],
+      link: LEGAL_AND_LAW_ROUTE,
     },
   ];
   return (
@@ -110,60 +118,61 @@ const NavBar = () => {
             </Marquee>
           </Col>
         </Row>
-        <Row
-          style={{
-            marginLeft: 0,
-            paddingLeft: 0,
-            marginRight: 0,
-            paddingRight: 0,
-          }}
-        >
+        <Row>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Financial"
               allTopiks={allTopiks[1].Financial}
+              link={allTopiks[1].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Marketing"
               allTopiks={allTopiks[0].Marketing}
+              link={allTopiks[0].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Management"
               allTopiks={allTopiks[2].Management}
+              link={allTopiks[2].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Technology"
               allTopiks={allTopiks[3].Technology}
+              link={allTopiks[3].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Product"
               allTopiks={allTopiks[4].Product}
+              link={allTopiks[4].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Human Resourse"
               allTopiks={allTopiks[5].HumanResourse}
+              link={allTopiks[5].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Entrepreneurship"
               allTopiks={allTopiks[6].Entrepreneurship}
+              link={allTopiks[6].link}
             />
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Legal and Law"
               allTopiks={allTopiks[7].LegalandLaw}
+              link={allTopiks[7].link}
             />
           </Col>
         </Row>

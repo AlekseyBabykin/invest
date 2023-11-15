@@ -1,10 +1,16 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
 const Management = () => {
   const { name } = useParams();
-  console.log(name);
-  return <div>Management</div>;
+
+  return (
+    <Container>
+      <div>Management</div>
+      <div>{name}</div>
+    </Container>
+  );
 };
 
 export default Management;

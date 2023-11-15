@@ -1,7 +1,12 @@
 import React from "react";
+import { Container } from "react-bootstrap";
 
 const Marketing = () => {
-  return <div>Marketing</div>;
+  return (
+    <Container>
+      <div>Marketing</div>
+    </Container>
+  );
 };
 
 export default Marketing;
