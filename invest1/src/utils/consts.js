@@ -10,4 +10,5 @@ export const PRODUCT_ROUTE = "/product";
 export const HUMAN_RESOURCES_ROUTE = "/humanresources";
 export const ENTERPRENEURSHIP_ROUTE = "/enterpreneurship";
 export const LEGAL_AND_LAW_ROUTE = "/legalandlaw";
+export const BUSINESS_DEVELOPMENT = "/businessdevelopment";
 export const HOME_PAGE = "/";

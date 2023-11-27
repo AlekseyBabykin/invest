@@ -1,5 +1,6 @@
 import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
+import BusinessDevelopment from "./pages/BusinessDevelopment";
 import Enterpreneurship from "./pages/Enterpreneurship";
 import Finance from "./pages/Finance";
 import HomePage from "./pages/HomePage";
@@ -23,6 +24,7 @@ import {
   ENTERPRENEURSHIP_ROUTE,
   LEGAL_AND_LAW_ROUTE,
   HOME_PAGE,
+  BUSINESS_DEVELOPMENT,
 } from "./utils/consts";
 
 export const authRoutes = [
@@ -49,10 +51,10 @@ export const pablicRoutes = [
     path: REGISTRATION_ROUTE,
     Component: Auth,
   },
-  // {
-  //   path: MARKETING_ROUTE + "/:name",
-  //   Component: Marketing,
-  // },
+  {
+    path: MARKETING_ROUTE + "/:name",
+    Component: Marketing,
+  },
   {
     path: MANAGEMENT_ROUTE + "/:name",
     Component: Management,
@@ -76,6 +78,10 @@ export const pablicRoutes = [
   {
     path: LEGAL_AND_LAW_ROUTE + "/:name",
     Component: LegaAndLaw,
+  },
+  {
+    path: BUSINESS_DEVELOPMENT + "/:name",
+    Component: BusinessDevelopment,
   },
   {
     path: HOME_PAGE,

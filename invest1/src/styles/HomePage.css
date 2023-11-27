@@ -1,12 +1,12 @@
 .wrapper {
-  height: 50vh;
+  height: 45vh;
   /*This part is important for centering*/
   /* display: grid;
   place-items: center; */
 }
 
 .typing-demo {
-  width: 48ch;
+  width: 40ch;
   animation: typing 3s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;

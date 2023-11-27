@@ -1,0 +1,16 @@
+#nameNavbar {
+  /* display: flex;
+  flex-wrap: wrap;
+  gap: 10px; */
+
+  width: 250px;
+  height: 30px;
+}
+#nameNavbar:hover {
+  background-color: rgb(
+    42,
+    45,
+    56
+  ); /* Change the background color when hovered */
+  color: #e2d7d7; /* Change the text color when hovered */
+}

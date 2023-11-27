@@ -26,8 +26,9 @@ const HomePage = () => {
               Mission Statement
             </h2>
             <div className="typing-demo">
-              <p>“Making the world of Entrepreneurship accessible</p>
-              <p>to people with big ideas without Background”</p>
+              <p>“Making the world of Entrepreneurship </p>
+              <p>accessible to people with big ideas</p>
+              <p>without Background” </p>
             </div>
           </div>
         </Col>

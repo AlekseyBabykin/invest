@@ -3,82 +3,17 @@ import { useNavigate } from "react-router-dom";
 import Marquee from "react-fast-marquee";
 import { Image } from "react-bootstrap";
 import logo from "../photo/logo.jpg";
+import "../styles/NavBar.css";
+import { allTopiks } from "../const/AllTopiks";
 
 import { Container, Button, Form, Navbar, Row, Col } from "react-bootstrap";
 
 import NavDropdownButton from "./NavDropdownButton";
-import {
-  FINANCE_ROUTE,
-  HOME_PAGE,
-  HUMAN_RESOURCES_ROUTE,
-  LEGAL_AND_LAW_ROUTE,
-  MANAGEMENT_ROUTE,
-  MARKETING_ROUTE,
-  PRODUCT_ROUTE,
-  TECHNOLOGY_ROUTE,
-} from "../utils/consts";
+import { HOME_PAGE } from "../utils/consts";
 
 const NavBar = () => {
   const navigate = useNavigate();
-  const allTopiks = [
-    {
-      Marketing: [
-        "Market Research",
-        "Marketing Plausible",
-        "Marketing strategies",
-      ],
-      link: MARKETING_ROUTE,
-    },
-    {
-      Financial: [
-        "Concepts in Economics",
-        "Concepts in Capital Markets",
-        "Financial statements",
-      ],
-      link: FINANCE_ROUTE,
-    },
-    {
-      Management: [
-        "Business Plans",
-        "Time-Management Methods",
-        "Decision-Making Methods and Tools",
-      ],
-      link: MANAGEMENT_ROUTE,
-    },
-    {
-      Technology: [
-        "Artificial intelligence",
-        "Business Automatoins",
-        "Blockchan",
-      ],
-      link: TECHNOLOGY_ROUTE,
-    },
-    {
-      Product: [
-        "Product Development Process",
-        "Product Roadmaps",
-        "Product A/B Testing",
-      ],
-      link: PRODUCT_ROUTE,
-    },
-    {
-      HumanResourse: [
-        "Terminology in HR Management",
-        "Recruitment Process",
-        "Onboarding",
-      ],
-      link: HUMAN_RESOURCES_ROUTE,
-    },
-    { Entrepreneurship: [" "] },
-    {
-      LegalandLaw: [
-        "Intellectual Property",
-        "Patent Registration in Israel",
-        "Patent Registtion in USA",
-      ],
-      link: LEGAL_AND_LAW_ROUTE,
-    },
-  ];
+
   return (
     <Navbar bg="dark" variant="dark">
       <Container
@@ -101,7 +36,7 @@ const NavBar = () => {
           </Col>
           <Col
             xs={5}
-            className="d-flex flex-row gap-2"
+            className="d-flex"
             onClick={() => navigate(HOME_PAGE)}
             style={{ cursor: "pointer" }}
           >
@@ -118,7 +53,7 @@ const NavBar = () => {
             </Marquee>
           </Col>
         </Row>
-        <Row>
+        <Row className="dflex gap-2">
           <Col id="nameNavbar">
             <NavDropdownButton
               name="Financial"
@@ -128,7 +63,7 @@ const NavBar = () => {
           </Col>
           <Col id="nameNavbar">
             <NavDropdownButton
-              name="Marketing"
+              name="Marketing & Sales"
               allTopiks={allTopiks[0].Marketing}
               link={allTopiks[0].link}
             />
@@ -173,6 +108,13 @@ const NavBar = () => {
               name="Legal and Law"
               allTopiks={allTopiks[7].LegalandLaw}
               link={allTopiks[7].link}
+            />
+          </Col>
+          <Col id="nameNavbar">
+            <NavDropdownButton
+              name="Business Development"
+              allTopiks={allTopiks[8].BusinessDevelopment}
+              link={allTopiks[8].link}
             />
           </Col>
         </Row>

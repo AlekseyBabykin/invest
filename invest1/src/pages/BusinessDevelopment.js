@@ -1,15 +1,15 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import { Container } from "react-bootstrap";
 
-const Finance = () => {
+const BusinessDevelopment = () => {
   const { name } = useParams();
   return (
     <Container>
-      <div>Finance</div>
+      <div>BusinessDevelopment</div>
       <div>{name}</div>
     </Container>
   );
 };
 
-export default Finance;
+export default BusinessDevelopment;
