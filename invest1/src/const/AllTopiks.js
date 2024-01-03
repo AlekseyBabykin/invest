@@ -93,7 +93,7 @@ export const allTopiks = [
       "Product Strategy",
       "Product Roadmaps",
       "Product Backlogs",
-      "Product A/B Testing",
+      "Product A-B Testing",
       "Design Sprints",
       "Prototypes and MVPs",
       "Proof of Value",

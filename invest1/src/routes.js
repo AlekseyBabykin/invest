@@ -1,15 +1,16 @@
 import Admin from "./pages/Admin";
 import Auth from "./pages/Auth";
-import BusinessDevelopment from "./pages/BusinessDevelopment";
-import Enterpreneurship from "./pages/Enterpreneurship";
-import Finance from "./pages/Finance";
+import BusinessDevelopment from "./pages/skip/BusinessDevelopment";
+import CommonPage from "./pages/CommonPage";
+import Enterpreneurship from "./pages/skip/Enterpreneurship";
+import Finance from "./pages/skip/Finance";
 import HomePage from "./pages/HomePage";
-import HumanResources from "./pages/HumanResources";
-import LegaAndLaw from "./pages/LegaAndLaw";
-import Management from "./pages/Management";
-import Marketing from "./pages/Marketing";
-import Product from "./pages/Product";
-import Technology from "./pages/Technology";
+import HumanResources from "./pages/skip/HumanResources";
+import LegaAndLaw from "./pages/skip/LegaAndLaw";
+import Management from "./pages/skip/Management";
+import Marketing from "./pages/skip/Marketing";
+import Product from "./pages/skip/Product";
+import Technology from "./pages/skip/Technology";
 
 import {
   REGISTRATION_ROUTE,
@@ -25,7 +26,9 @@ import {
   LEGAL_AND_LAW_ROUTE,
   HOME_PAGE,
   BUSINESS_DEVELOPMENT,
+  GENERATE_STARTUP,
 } from "./utils/consts";
+import GenerateStartup from "./pages/GenerateStartup";
 
 export const authRoutes = [
   {
@@ -41,7 +44,7 @@ export const authRoutes = [
 export const pablicRoutes = [
   {
     path: FINANCE_ROUTE + "/:name",
-    Component: Finance,
+    Component: CommonPage,
   },
   {
     path: LOGIN_ROUTE,
@@ -53,38 +56,42 @@ export const pablicRoutes = [
   },
   {
     path: MARKETING_ROUTE + "/:name",
-    Component: Marketing,
+    Component: CommonPage,
   },
   {
     path: MANAGEMENT_ROUTE + "/:name",
-    Component: Management,
+    Component: CommonPage,
   },
   {
     path: TECHNOLOGY_ROUTE + "/:name",
-    Component: Technology,
+    Component: CommonPage,
   },
   {
     path: PRODUCT_ROUTE + "/:name",
-    Component: Product,
+    Component: CommonPage,
   },
   {
     path: HUMAN_RESOURCES_ROUTE + "/:name",
-    Component: HumanResources,
+    Component: CommonPage,
   },
   {
     path: ENTERPRENEURSHIP_ROUTE + "/:name",
-    Component: Enterpreneurship,
+    Component: CommonPage,
   },
   {
     path: LEGAL_AND_LAW_ROUTE + "/:name",
-    Component: LegaAndLaw,
+    Component: CommonPage,
   },
   {
     path: BUSINESS_DEVELOPMENT + "/:name",
-    Component: BusinessDevelopment,
+    Component: CommonPage,
   },
   {
     path: HOME_PAGE,
     Component: HomePage,
+  },
+  {
+    path: GENERATE_STARTUP,
+    Component: GenerateStartup,
   },
 ];

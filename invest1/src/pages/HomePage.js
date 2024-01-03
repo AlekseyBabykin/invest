@@ -9,7 +9,7 @@ const HomePage = () => {
   const { name } = useParams();
   console.log(name);
   return (
-    <Container className="mt-2">
+    <Container className="mt-2 mb-2">
       <Row>
         <Col xs={4}>
           <Image height={300} width={300} src={logo} />

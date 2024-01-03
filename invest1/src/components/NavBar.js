@@ -21,7 +21,7 @@ const NavBar = () => {
         className="d-flex flex-column"
         style={{ color: "whitesmoke", alignItems: "stretch" }}
       >
-        <Row>
+        <Row className="d-flex justify-content-between text-center">
           <Col xs={3}>
             <Form className="d-flex">
               <Form.Control
@@ -29,14 +29,14 @@ const NavBar = () => {
                 placeholder="Search"
                 className="me-2"
                 aria-label="Search"
-                style={{ width: 100 }}
+                style={{ width: 400 }}
               />
               <Button variant="outline-success">Search</Button>
             </Form>
           </Col>
           <Col
             xs={5}
-            className="d-flex"
+            className="d-flex justify-content-center text-end "
             onClick={() => navigate(HOME_PAGE)}
             style={{ cursor: "pointer" }}
           >
