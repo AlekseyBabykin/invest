@@ -10,7 +10,7 @@ import {
 
 import { Container } from "react-bootstrap";
 import GenerateStartup from "../pages/GenerateStartup";
-import { GENERATE_STARTUP } from "../utils/consts";
+import { GENERATE_LOGO, GENERATE_STARTUP } from "../utils/consts";
 
 export default function Footer() {
   return (
@@ -90,8 +90,8 @@ export default function Footer() {
                   </a>
                 </p>
                 <p>
-                  <a href="#!" className="text-reset">
-                    Networking
+                  <a href={GENERATE_LOGO} className="text-reset">
+                    Generate Logo
                   </a>
                 </p>
                 <p>

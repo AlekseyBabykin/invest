@@ -27,8 +27,10 @@ import {
   HOME_PAGE,
   BUSINESS_DEVELOPMENT,
   GENERATE_STARTUP,
+  GENERATE_LOGO,
 } from "./utils/consts";
 import GenerateStartup from "./pages/GenerateStartup";
+import GenerateLogo from "./pages/GenerateLogo";
 
 export const authRoutes = [
   {
@@ -93,5 +95,9 @@ export const pablicRoutes = [
   {
     path: GENERATE_STARTUP,
     Component: GenerateStartup,
+  },
+  {
+    path: GENERATE_LOGO,
+    Component: GenerateLogo,
   },
 ];

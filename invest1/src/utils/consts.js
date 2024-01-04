@@ -12,4 +12,5 @@ export const ENTERPRENEURSHIP_ROUTE = "/enterpreneurship";
 export const LEGAL_AND_LAW_ROUTE = "/legalandlaw";
 export const BUSINESS_DEVELOPMENT = "/businessdevelopment";
 export const GENERATE_STARTUP = "/generatestartup";
+export const GENERATE_LOGO = "/logo";
 export const HOME_PAGE = "/";
